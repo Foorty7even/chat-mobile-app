@@ -1,12 +1,13 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.chattutorial"
+        applicationId "com.example.chatmobileapp"
         minSdk 21
         targetSdk 31
         versionCode 1
@@ -21,9 +22,10 @@ android {
 
 dependencies {
     implementation "io.getstream:stream-chat-android-ui-components:4.28.2"
-    implementation "com.google.android.material:material:1.4.0"
+    implementation "com.google.android.material:material:1.5.0"
     implementation "androidx.activity:activity-ktx:1.4.0"
     implementation "io.coil-kt:coil:1.4.0"
+    implementation 'com.google.firebase:firebase-messaging:23.0.1'
 
     // Scalable Size Unit
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
@@ -33,4 +35,5 @@ dependencies {
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
 }
